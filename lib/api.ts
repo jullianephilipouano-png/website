@@ -4,7 +4,7 @@ import { Platform } from "react-native";
 import { getToken, removeToken } from "./auth";
 import { router } from "expo-router";
 
-const api = axios.create({ baseURL: "http://192.168.68.72:5000/api" });
+const api = "https://ced-research-backend.onrender.com";
 
 api.interceptors.request.use(async (config) => {
   const t = await getToken();
@@ -29,3 +29,4 @@ api.interceptors.response.use(
 );
 
 export default api;
+
