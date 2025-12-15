@@ -1,0 +1,51 @@
+# ===============================
+# Dependencies
+# ===============================
+node_modules/
+
+# ===============================
+# Environment variables (CRITICAL)
+# ===============================
+.env
+.env.*
+!.env.example
+
+# ===============================
+# Expo / React Native
+# ===============================
+.expo/
+.expo-shared/
+dist/
+build/
+web-build/
+expo-env.d.ts
+
+# ===============================
+# Native / Mobile
+# ===============================
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# ===============================
+# Metro / Debug
+# ===============================
+.metro-health-check*
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+*.log
+
+# ===============================
+# OS / Editor
+# ===============================
+.DS_Store
+
+# ===============================
+# TypeScript
+# ===============================
+*.tsbuildinfo
